@@ -1,0 +1,37 @@
+#include<stdio.h>
+int main()
+{
+	int sum,mul,sub,a,b,choice;
+	float div;
+	printf("enter the number of a:");
+	scanf("%d",&a);
+	printf("enter the number of b:");
+	scanf("%d",&b);
+	printf("enter the choice:1.addition,2.sub,3.mul,4.div");
+	scanf("%d",&choice);
+	if(choice==1)
+	{
+		sum=a+b;
+		printf("addtion %d",sum);
+	}
+	else if(choice==2)
+	{
+		sub=a-b;
+		printf("subtraction %d",sub);
+	}
+	else if(choice==3)
+	{
+		mul=a*b;
+		printf("multculation %d",mul);
+	}
+	else if(choice==4)
+	{
+		div=a/b;
+		printf("division %d",div);
+	}
+	else
+	{
+		printf("it is doesnot exists");
+	}
+	return 0;
+}
